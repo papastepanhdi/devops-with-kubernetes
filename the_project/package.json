@@ -1,0 +1,12 @@
+{
+  "name": "getting-started",
+  "version": "1.1.0",
+  "description": "1.1. Getting started (https://courses.mooc.fi/org/uh-cs/courses/devops-with-kubernetes/chapter-2/first-deploy)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}

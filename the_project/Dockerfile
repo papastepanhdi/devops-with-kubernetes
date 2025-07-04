@@ -1,7 +1,11 @@
-docker build -t random-string-timer-python ./the-project
+FROM node:alpine
 
-docker run random-string-timer-python
+WORKDIR /usr/src/app
 
-docker run -d --name my-python-timer random-string-timer-python
+COPY package* ./
 
-docker logs my-python-timer
+RUN npm ci
+
+COPY . .
+
+CMD ["npm", "start"]
