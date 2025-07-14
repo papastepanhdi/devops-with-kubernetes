@@ -10,7 +10,7 @@ docker push papastepanhdi/devops-with-kubernetes:1.1
 
 create deployment
 ```bash
-kubectl create deployment timestamp-hashgenerator --image=papastepanhdi/devops-with-kubernetes:1.1  -o yaml > ../log_output/deployment.yml
+kubectl create deployment timestamp-hashgenerator --image=papastepanhdi/devops-with-kubernetes:1.1  -o yaml > ./deployment.yml
 ```
 
 see logs

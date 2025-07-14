@@ -6,6 +6,6 @@ COPY package* ./
 
 RUN npm ci
 
-COPY . .
+COPY ../1.1-getting-started .
 
 CMD ["npm", "start"]
