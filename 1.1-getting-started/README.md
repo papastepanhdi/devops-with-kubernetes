@@ -17,3 +17,7 @@ see logs
 ```bash
 kubectl logs -f timestamp-hashgenerator-5787f5658b-w7lqr
 ```
+
+```bash
+kubectl describe deployment timestamp-hashgenerator
+```
