@@ -1,0 +1,65 @@
+# Angular build and environment outputs
+/dist
+/tmp
+/out-tsc
+/.angular
+
+# Environment files
+/src/environments/environment*.ts
+
+# Angular cache
+/.angular/cache
+
+# Compiled output
+/build
+/bazel-out
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Logs and runtime data
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm/yarn/pnpm caches
+.npm/
+.yarn/
+.pnpm-store/
+
+# Coverage and test output
+coverage/
+.nyc_output/
+lib-cov/
+
+# Misc runtime and debug files
+*.pid
+*.seed
+*.pid.lock
+.lock-wscript
+
+# Output of 'ng build' or 'next build'
+.next/
+out/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# REPL history
+.node_repl_history
+
+# Grunt intermediate storage
+.grunt/
+
+# Compiled binary addons
+build/Release/
