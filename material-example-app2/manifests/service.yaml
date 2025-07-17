@@ -3,10 +3,12 @@ kind: Service
 metadata:
   name: hashresponse-svc
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
-    app: hashresponse
+    app: hashresponse # This is the app as declared in the deployment.
   ports:
-    - port: 2345
+    - name: http
+      nodePort: 30080 # This is the port that is available outside. Value for nodePort can be between 30000-32767
       protocol: TCP
-      targetPort: 3000
+      port: 1234 # This is a port that is available to the cluster, in this case it can be ~ anything
+      targetPort: 3000 # This is the target port
