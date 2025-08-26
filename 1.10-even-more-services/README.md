@@ -16,6 +16,3 @@ kubectl apply -f manifests
 ```
 
 see logs
-```bash
- kubectl logs -l app=even-more-services
-```
