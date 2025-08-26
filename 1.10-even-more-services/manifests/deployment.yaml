@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: even-more-services
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: even-more-services
+  template:
+    metadata:
+      labels:
+        app: even-more-services
+    spec:
+      volumes:
+        - name: shared-data
+          emptyDir: {}
+      containers:
+        - name: generator
+          image: papastepanhdi/devops-with-kubernetes:1.10-generator
+          volumeMounts:
+            - name: shared-data
+              mountPath: /usr/src/app/shared
+        - name: web
+          image: papastepanhdi/devops-with-kubernetes:1.10-web
+          ports:
+            - containerPort: 3000
+          volumeMounts:
+            - name: shared-data
+              mountPath: /usr/src/app/shared
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 3000
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 3000

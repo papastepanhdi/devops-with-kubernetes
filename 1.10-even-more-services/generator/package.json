@@ -1,0 +1,21 @@
+{
+  "name": "even-more-services-generator",
+  "version": "1.10.0",
+  "description": "1.10. Even more services - Log Output Generator",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

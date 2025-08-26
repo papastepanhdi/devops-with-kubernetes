@@ -1,4 +1,5 @@
 # Ping-Pong Counter Application
+In future exercises, this second application will be referred to as "ping-pong application". It will be used with "Log output" application.
 
 A simple Express.js application that implements a ping-pong counter service, responding to requests with an incrementing counter.
 
@@ -59,7 +60,6 @@ Returns application health status.
 Web interface for interacting with the counter.
 
 ## Example Usage
-
 ```bash
 # First request
 curl http://localhost:3000/pingpong
