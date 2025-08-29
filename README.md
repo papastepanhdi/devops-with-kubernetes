@@ -12,3 +12,4 @@
 - [1.8](https://github.com/papastepanhdi/devops-with-kubernetes/tree/1.8/1.8-the-project-step-5)
 - [1.9](https://github.com/papastepanhdi/devops-with-kubernetes/tree/1.9/1.9-more-services)
 - [1.10](https://github.com/papastepanhdi/devops-with-kubernetes/tree/1.10/1.10-even-more-services)
+- [1.11](https://github.com/papastepanhdi/devops-with-kubernetes/tree/1.11/1.11-persisting-data)
